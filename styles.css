@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style-type: none;
+}
+
+html {
+    /* line-height: 1.5; */
+    font-size: 18px;
+    font-family: 'Georgia','Times New Roman', 'Times', 'serif', 'Comic'. 'Sans MS', 'Textile', 'Cursive';
+}
+
+h1, h2, p {
+    overflow-wrap: break-word;
+}
+
+/* gradient */
+
+.section {
+    background: linear-gradient(114.2deg, rgb(121, 194, 243) 22.6%, rgb(255, 180, 239) 67.7%);
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+}
+
+.flex{
+    display: flex;
+}
+
+/* for the container on top of the background */
+.container {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 30px;
+    border-radius: 8px;
+
+}
+
+.logo {
+    width: 9rem;
+    padding-bottom: 1.8rem;
+    padding-top: 0;
+    height: 80px;
+    cursor: pointer;
+    padding-top: 0.1;
+
+}
+
+
+/* styling the navigation */
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 280px;
+} 
+
+.spanned{
+    padding-top: 0.1;
+    margin-right: 800;
+    font-weight: bold;
+   
+}
+
+p .spanned{
+    display: flex;
+
+}
+
+.nav li a{
+    text-decoration: none;
+    color:#000000;
+    
+}
+
+.nav li a:hover{
+    color: #00b7ff;
+}
+
+
+/* to remove style disc from list of skills */
+
+.skills li a{
+    text-decoration: none;
+    color:#000000;
+
+}
+
+/* to make the headers arranged, the nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+
+/* for the button */
+.btn {
+    border-radius: 8px;
+    color: white;
+    background-color: #000000;
+    margin: 12px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4accff;
+    font-weight: bold;
+    color: #ffffff;
+    border: #4accff;
+}
+
+/* profile image styling */
+
+.my_image img{
+    border-radius: 12px;
+    background: linear-gradient(114.2deg, rgb(121, 194, 243) 22.6%, rgb(255, 180, 239) 67.7%);
+    /* opacity: 0.8 */
+    height:280px;
+     width:240px;
+}
+
+/* This is for the text close to the profile image */
+.main_page {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 62px;
+}
+
+.introducing_me{
+    margin: 60px;/*  giving space btw text and image */
+    align-items: center;
+}
+
+/* hi there size */
+.introducing_me h1 {
+    font-size: 60px;
+}
+
+/* Gives space btw head texts */
+.intro_content h2, .introducing_me h1 {
+    margin-bottom: 8px;
+}
+
+/* Helps those skills flex to the side of my career so far */
+.intro_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin: 50px;
+}
+
+/* giving text body a light grey colour */
+.introducing_me p, .intro_content p {
+    color: #383232f3;
+}
+
+/* span p {
+    color:#000000;
+} */
+
+/* Aligning skills and making look better */
+
+.skills { 
+    align-items: center;
+    margin: 40px;
+}
+
+/* making skills a non list and giving them that thin border around */
+.skills li {
+    display: inline-flex;
+    list-style: none;
+    text-align: center;
+    margin: 6px;
+    padding: 8px;
+    border: 1px solid rgba(49, 61, 72, 0.253);
+    border-radius: 10px;
+}
+
+/* When we hover on skills */
+.skills li:hover {
+    background-color: #4accff;
+    font-weight: bold;
+}
+.skills li a:hover{
+    color: #ffffff;
+
+}
